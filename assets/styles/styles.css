@@ -44,6 +44,13 @@ p {
   border: 2px solid black;
   position: absolute;
 }
+.es-centered h2 {
+  text-align: center;
+  font-size: clamp(1rem, 0.8039rem + 0.9804vw, 1.75rem);
+  padding: 0.5rem;
+  position: absolute;
+  width: 150px;
+}
 
 @media screen and (min-width: 560px) {
   .es-centered h1 {
@@ -51,24 +58,19 @@ p {
     border: unset;
   }
 }
-.es-flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+.es-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
 }
-.es-flex-container .es-flex-item {
-  max-width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  outline: 1px solid red;
+
+@media screen and (min-width: 600px) {
+  .es-grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
-.es-flex-container img {
-  aspect-ratio: 1/1;
-  outline: 1px solid red;
+.es-grid-item img {
+  padding: 1rem;
 }
 
 .es-figcaption-red {
@@ -81,12 +83,12 @@ p {
   color: white;
 }
 
-.es-first .es-flex-item:nth-child(1) {
+.es-grid-container .es-grid-item:nth-child(1) {
   background: linear-gradient(90deg, #00a449 50%, #008846 50%);
 }
-.es-first .es-flex-item:nth-child(2) {
+.es-grid-container .es-grid-item:nth-child(2) {
   background: linear-gradient(90deg, #fff472 50%, #ffd100 50%);
 }
-.es-first .es-flex-item:nth-child(3) {
+.es-grid-container .es-grid-item:nth-child(3) {
   background: linear-gradient(90deg, #ff9550 50%, #ff7e06 50%);
 }/*# sourceMappingURL=styles.css.map */
