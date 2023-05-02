@@ -66,16 +66,13 @@ $es-red: #da1a21;
   }
   h2 {
     text-align: center;
-    font-size: clamp(1rem, 0.8039rem + 0.9804vw, 1.75rem); //make it smaller
-    //background-color: white;
-    padding: 0.5rem;
-    //border: 2px solid black;
+    font-size: clamp(0.75rem, 0.462rem + 1.1438vw, 1.5rem);
     position: absolute;
-    width: 150px;
+    width: 10ch;
   }
 }
 
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 600px) {
   .es-centered {
     h1 {
       background-color: unset;
@@ -84,10 +81,14 @@ $es-red: #da1a21;
   }
 }
 
+
 .es-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  align-content: start;
+  align-items: start;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 600px) {
@@ -96,13 +97,23 @@ $es-red: #da1a21;
   }
 }
 
-.es-grid-item img {
-  padding: 1rem;
+.es-grid-item {
+  align-content: start;
+  display: grid;
+  grid-template-rows: 1fr 60px;
+  align-content: start;
+  justify-content: center;
+  align-items: end;
+    img {
+      padding: 1rem;
+    }
+    
 }
 
   // main styles
+  
   .es-figcaption-red{
-     padding: 0.5rem;
+     padding: 0.7rem;
      text-align: center;
     font-family: cera_probold;
     letter-spacing: 0.13rem;
@@ -120,5 +131,17 @@ $es-red: #da1a21;
     }
     &:nth-child(3){
       background: linear-gradient(90deg, $es-orange01 50%, $es-orange02 50%);
+    }
+    &:nth-child(4){
+      align-self: center;
+      background-image: url(../img/04-compre.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: grid;
+      place-items: center;
+      height: 100%;
+      width: 100%;
+      
     }
   }
