@@ -50,6 +50,17 @@ $es-orange01: #ff9550;
 $es-orange02: #ff7e06;
 $es-red: #da1a21;
 
+//for squares
+$es-grey-100: #f7f7f7;
+$es-grey-200: #e7e7e7;
+$es-grey-300: #c8c3c2;
+$es-grey-400: #c5c0bf;
+$es-sq-yellow1: #ffe542;
+$es-sq-yellow2: #ffd500;
+$es-sq-orange: #ff7300;
+$es-sq-purple1: #9759b0;
+$es-sq-purple2: #7836a2
+
 //utility classes
   
 .es-centered {
@@ -109,7 +120,20 @@ $es-red: #da1a21;
       width: 100%;
   height: auto;
     }
-    
+}
+
+.es-grid-item_v2 {
+  outline: 2px solid yellow;
+}
+
+.es-flex-container {
+  display: flex;
+  flex-direction: row;
+  outline: 1px solid blue;
+  background-color: blue;
+    img {
+      display: inline-block;
+    }
 }
 
   // main styles
@@ -152,4 +176,9 @@ $es-red: #da1a21;
       width: 100%;
       
     }
+  }
+
+  // decorative lines 
+  .es-divider {
+    
   }
