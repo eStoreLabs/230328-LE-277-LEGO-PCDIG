@@ -30,4 +30,63 @@ h2, h3 {
 
 p {
   font-family: cera_proregular, "Trebutchet MS", Arial, Helvetica, sans-serif;
+}
+
+.es-centered {
+  display: grid;
+  place-items: center;
+}
+.es-centered h1 {
+  text-align: center;
+  font-size: clamp(1rem, 0.8039rem + 0.9804vw, 1.75rem);
+  background-color: white;
+  padding: 0.5rem;
+  border: 2px solid black;
+  position: absolute;
+}
+
+@media screen and (min-width: 560px) {
+  .es-centered h1 {
+    background-color: unset;
+    border: unset;
+  }
+}
+.es-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.es-flex-container .es-flex-item {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid red;
+}
+.es-flex-container img {
+  aspect-ratio: 1/1;
+  outline: 1px solid red;
+}
+
+.es-figcaption-red {
+  padding: 0.5rem;
+  text-align: center;
+  font-family: cera_probold;
+  letter-spacing: 0.13rem;
+  width: 100%;
+  background-color: #da1a21;
+  color: white;
+}
+
+.es-first .es-flex-item:nth-child(1) {
+  background: linear-gradient(90deg, #00a449 50%, #008846 50%);
+}
+.es-first .es-flex-item:nth-child(2) {
+  background: linear-gradient(90deg, #fff472 50%, #ffd100 50%);
+}
+.es-first .es-flex-item:nth-child(3) {
+  background: linear-gradient(90deg, #ff9550 50%, #ff7e06 50%);
 }/*# sourceMappingURL=styles.css.map */

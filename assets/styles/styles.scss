@@ -39,6 +39,88 @@ h2, h3 {
 p {
   font-family: cera_proregular, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
-  //utility classes
+
+//variables
+
+$es-green01: #00a449;
+$es-green02: #008846;
+$es-yellow01: #fff472;
+$es-yellow02: #ffd100;
+$es-orange01: #ff9550;
+$es-orange02: #ff7e06;
+$es-red: #da1a21;
+
+//utility classes
   
+.es-centered {
+  display: grid;
+  place-items: center;
+  // position: absolute;
+  h1 {
+    text-align: center;
+    font-size: clamp(1rem, 0.8039rem + 0.9804vw, 1.75rem);
+    background-color: white;
+    padding: 0.5rem;
+    border: 2px solid black;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .es-centered {
+    h1 {
+      background-color: unset;
+      border: unset;
+    }
+  }
+}
+
+.es-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  //flex-basis: 23%;
+  align-items: flex-start;
+  justify-content: center;
+    .es-flex-item {
+      max-width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      outline: 1px solid red;
+       
+    }
+        img {
+          // max-width: 178px;
+          // max-height: 178px;
+          aspect-ratio: 1 / 1;
+          outline: 1px solid red;
+        }
+}
+
+
+
+
   // main styles
+  .es-figcaption-red{
+    padding: 0.5rem;
+    text-align: center;
+    font-family: cera_probold;
+    letter-spacing: 0.13rem;
+    width: 100%;
+    background-color: $es-red;
+    color: white;
+  }
+
+  .es-first .es-flex-item {
+    &:nth-child(1){
+      background: linear-gradient(90deg, $es-green01 50%, $es-green02 50%);
+    }
+    &:nth-child(2){
+      background: linear-gradient(90deg, $es-yellow01 50%, $es-yellow02 50%);
+    }
+    &:nth-child(3){
+      background: linear-gradient(90deg, $es-orange01 50%, $es-orange02 50%);
+    }
+  }
