@@ -81,6 +81,13 @@ p {
 }
 .es-grid-item img {
   padding: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.es-main {
+  width: 100vw;
+  max-width: 1544px;
 }
 
 .es-figcaption-red {
@@ -91,6 +98,7 @@ p {
   width: 100%;
   background-color: #da1a21;
   color: white;
+  font-size: clamp(0.75rem, 0.5539rem + 0.9804vw, 1.5rem);
 }
 
 .es-grid-container .es-grid-item:nth-child(1) {
