@@ -85,6 +85,20 @@ p {
   height: auto;
 }
 
+.es-grid-item_v2 {
+  outline: 2px solid yellow;
+}
+
+.es-flex-container {
+  display: flex;
+  flex-direction: row;
+  outline: 1px solid blue;
+  background-color: blue;
+}
+.es-flex-container img {
+  display: inline-block;
+}
+
 .es-main {
   width: 100vw;
   max-width: 1544px;
