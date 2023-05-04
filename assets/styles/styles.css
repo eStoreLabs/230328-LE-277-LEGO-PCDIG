@@ -31,6 +31,10 @@ h3 {
   font-family: cera_probold, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
 
+h3 {
+  color: white;
+}
+
 p {
   font-family: cera_proregular, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
@@ -102,6 +106,10 @@ p {
   height: auto;
 }
 
+figcaption {
+  height: 3rem;
+}
+
 .es-flex-container-col {
   display: flex;
   flex-direction: column;
@@ -109,7 +117,6 @@ p {
   align-items: center;
   align-content: end;
   justify-content: end;
-  outline: 1px solid blue;
 }
 
 .es-flex-container-row {
@@ -117,12 +124,12 @@ p {
   flex-direction: row;
   width: 100%;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 0.5rem;
-  outline: 1px solid red;
 }
 .es-flex-container-row img {
   max-height: 2rem;
+  max-width: 50px;
 }
 
 .es-main {
@@ -164,4 +171,23 @@ p {
   place-items: center;
   height: 100%;
   width: 100%;
+}
+
+#es-categories-age figure:nth-of-type(1) figcaption {
+  background: linear-gradient(90deg, #006cb7 50%, #96ceea 50%);
+}
+#es-categories-age figure:nth-of-type(2) figcaption {
+  background: linear-gradient(90deg, #9d1c20 50%, #dd1a22 50%);
+}
+#es-categories-age figure:nth-of-type(3) figcaption {
+  background: linear-gradient(90deg, #00682c 50%, #00b143 50%);
+}
+#es-categories-age figure:nth-of-type(4) figcaption {
+  background: linear-gradient(90deg, #ffad00 50%, #ffd500 50%);
+}
+#es-categories-age figure:nth-of-type(5) figcaption {
+  background: linear-gradient(90deg, #ff59a1 50%, #ffafd0 50%);
+}
+#es-categories-age figure:nth-of-type(6) figcaption {
+  background: linear-gradient(90deg, #000000 50%, #c7c1c0 50%);
 }/*# sourceMappingURL=styles.css.map */

@@ -26,6 +26,7 @@ html {
     margin: 0;
   }
 
-  figure {
+  figure, figcaption {
+    box-sizing: border-box;
     margin: 0;
   }
