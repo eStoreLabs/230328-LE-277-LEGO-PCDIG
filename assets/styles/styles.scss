@@ -255,3 +255,25 @@ img {
 
 
 // decorative lines
+.es-divider {
+  height: 40px;
+  margin-block: 50px;
+  background-position: right;
+}
+
+@media screen and (min-width: 600px) {
+  .es-divider {
+    background-size: contain;
+  }
+}
+
+  .div-01 {
+    background-image: url(../img/divider-01-long.png);
+  }
+
+  .div-02 {
+    background-image: url(../img/divider-02-long.png);
+  }
+  .div-03 {
+    background-image: url(../img/divider-03-long.png);
+  }
