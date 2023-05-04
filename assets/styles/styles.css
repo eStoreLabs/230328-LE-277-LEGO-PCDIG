@@ -214,4 +214,8 @@ figcaption {
 
 .div-03 {
   background-image: url(../img/divider-03-long.png);
+}
+
+figure {
+  outline: 2px solid red;
 }/*# sourceMappingURL=styles.css.map */
