@@ -31,10 +31,6 @@ h3 {
   font-family: cera_probold, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
 
-h3 {
-  color: white;
-}
-
 p {
   font-family: cera_proregular, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
@@ -116,7 +112,8 @@ figcaption {
   width: 100%;
   align-items: center;
   align-content: end;
-  justify-content: end;
+  justify-content: space-evenly;
+  outline: 1px solid yellow;
 }
 
 .es-flex-container-row {
@@ -173,6 +170,9 @@ figcaption {
   width: 100%;
 }
 
+#es-categories-age h3 {
+  color: white;
+}
 #es-categories-age figure:nth-of-type(1) figcaption {
   background: linear-gradient(90deg, #006cb7 50%, #96ceea 50%);
 }
@@ -190,6 +190,21 @@ figcaption {
 }
 #es-categories-age figure:nth-of-type(6) figcaption {
   background: linear-gradient(90deg, #000000 50%, #c7c1c0 50%);
+}
+
+#es-categories-theme .es-flex-container-row {
+  padding: 0;
+  height: 100%;
+}
+#es-categories-theme .es-flex-container-row img {
+  max-height: unset;
+  width: 100%;
+  outline: 1px solid red;
+}
+#es-categories-theme .square {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: #006cb7;
 }
 
 .es-divider {
