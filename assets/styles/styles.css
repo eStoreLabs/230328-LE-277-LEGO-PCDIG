@@ -35,6 +35,10 @@ p {
   font-family: cera_proregular, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
 
+.margin {
+  margin: 16px;
+}
+
 .es-centered {
   display: grid;
   place-items: center;
@@ -67,16 +71,26 @@ p {
   align-content: start;
   align-items: start;
   justify-content: space-between;
+  gap: 16px;
+}
+
+.es-grid-first {
+  grid-column: 1/3;
 }
 
 @media screen and (min-width: 600px) {
   .es-grid-container {
     grid-template-columns: repeat(4, 1fr);
+    align-items: end;
+  }
+  .es-grid-last {
+    grid-column: 3/5;
   }
 }
 .es-grid-item {
   align-content: start;
   display: grid;
+  width: 100%;
   grid-template-rows: 1fr 60px;
   align-content: start;
   justify-content: center;
@@ -91,38 +105,33 @@ p {
 .es-flex-container-col {
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
-  justify-content: center;
+  align-content: end;
+  justify-content: end;
   outline: 1px solid blue;
 }
 
 .es-flex-container-row {
   display: flex;
-  flex-flow: row wrap;
-  align-items: flex-end;
-  justify-content: space-around;
-  align-content: flex-end;
-  outline: 1px solid purple;
-}
-.es-flex-container-row figcaption img {
-  max-height: 1.5rem;
-}
-.es-flex-container-row .es-flex-item {
-  flex: 1;
-  flex-basis: 21%;
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
   align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem;
   outline: 1px solid red;
 }
-.es-flex-container-row .double {
-  flex: 2;
-  flex-basis: 42%;
+.es-flex-container-row img {
+  max-height: 2rem;
 }
 
 .es-main {
   max-width: 1544px;
   margin: auto;
+}
+
+.es-centered img {
+  width: 100%;
 }
 
 .es-figcaption-red {
@@ -149,7 +158,7 @@ p {
   align-self: center;
   background-image: url(../img/04-compre.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   display: grid;
   place-items: center;
