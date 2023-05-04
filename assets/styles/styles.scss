@@ -1,38 +1,41 @@
 //typography
 //LEGO fonts upload
 @font-face {
-  font-family: 'cera_problack';
-  src: url('../fonts/cera_pro_black-webfont.woff2') format('woff2'),
-       url('../fonts/cera_pro_black-webfont.woff') format('woff');
+  font-family: "cera_problack";
+  src: url("../fonts/cera_pro_black-webfont.woff2") format("woff2"),
+    url("../fonts/cera_pro_black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'cera_probold';
-  src: url('../fonts/cera_pro_bold-webfont.woff2') format('woff2'),
-       url('../fonts/cera_pro_bold-webfont.woff') format('woff');
+  font-family: "cera_probold";
+  src: url("../fonts/cera_pro_bold-webfont.woff2") format("woff2"),
+    url("../fonts/cera_pro_bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'cera_proregular';
-  src: url('../fonts/cera_pro_regular-webfont.woff2') format('woff2'),
-       url('../fonts/cera_pro_regular-webfont.woff') format('woff');
+  font-family: "cera_proregular";
+  src: url("../fonts/cera_pro_regular-webfont.woff2") format("woff2"),
+    url("../fonts/cera_pro_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-h1, h2, h3 {
-    text-transform: uppercase;
-  }  
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
 
 h1 {
   font-family: cera_problack, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: cera_probold, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
 
@@ -62,7 +65,7 @@ $es-sq-purple1: #9759b0;
 $es-sq-purple2: #7836a2;
 
 //utility classes
-  
+
 .es-centered {
   display: grid;
   place-items: center;
@@ -92,7 +95,6 @@ $es-sq-purple2: #7836a2;
   }
 }
 
-
 .es-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -115,11 +117,11 @@ $es-sq-purple2: #7836a2;
   align-content: start;
   justify-content: center;
   align-items: end;
-    img {
-      padding: 1rem;
-      width: 100%;
-  height: auto;
-    }
+  img {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .es-grid-item_v2 {
@@ -131,51 +133,50 @@ $es-sq-purple2: #7836a2;
   flex-direction: row;
   outline: 1px solid blue;
   background-color: blue;
-    img {
-      display: inline-block;
-    }
+  img {
+    display: inline-block;
+  }
 }
 
-  // main styles
-  
-  .es-main {
-    width: 100vw;
-    max-width: 1544px;
+// main styles
+
+.es-main {
+  width: 100%;
+  max-width: 1544px;
+}
+.es-figcaption-red {
+  padding: 0.7rem;
+  text-align: center;
+  font-family: cera_probold;
+  letter-spacing: 0.13rem;
+  width: 100%;
+  //height: 4rem;
+  background-color: $es-red;
+  color: white;
+  font-size: clamp(0.75rem, 0.5539rem + 0.9804vw, 1.5rem);
+}
+
+.es-grid-container .es-grid-item {
+  &:nth-child(1) {
+    background: linear-gradient(90deg, $es-green01 50%, $es-green02 50%);
   }
-  .es-figcaption-red{
-     padding: 0.7rem;
-     text-align: center;
-    font-family: cera_probold;
-    letter-spacing: 0.13rem;
+  &:nth-child(2) {
+    background: linear-gradient(90deg, $es-yellow01 50%, $es-yellow02 50%);
+  }
+  &:nth-child(3) {
+    background: linear-gradient(90deg, $es-orange01 50%, $es-orange02 50%);
+  }
+  &:nth-child(4) {
+    align-self: center;
+    background-image: url(../img/04-compre.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    height: 100%;
     width: 100%;
-    //height: 4rem;
-     background-color: $es-red;
-     color: white;
-     font-size: clamp(0.75rem, 0.5539rem + 0.9804vw, 1.5rem);
   }
+}
 
-  .es-grid-container .es-grid-item {
-    &:nth-child(1){
-      background: linear-gradient(90deg, $es-green01 50%, $es-green02 50%);
-    }
-    &:nth-child(2){
-      background: linear-gradient(90deg, $es-yellow01 50%, $es-yellow02 50%);
-    }
-    &:nth-child(3){
-      background: linear-gradient(90deg, $es-orange01 50%, $es-orange02 50%);
-    }
-    &:nth-child(4){
-      align-self: center;
-      background-image: url(../img/04-compre.png);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: grid;
-      place-items: center;
-      height: 100%;
-      width: 100%;
-      
-    }
-  }
-
-  // decorative lines 
+// decorative lines
