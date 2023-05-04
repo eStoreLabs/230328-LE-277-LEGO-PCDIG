@@ -16,7 +16,9 @@
   font-weight: normal;
   font-style: normal;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-transform: uppercase;
 }
 
@@ -24,7 +26,8 @@ h1 {
   font-family: cera_problack, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: cera_probold, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
 
@@ -59,7 +62,7 @@ p {
 }
 .es-grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   place-items: center;
   align-content: start;
   align-items: start;
@@ -85,23 +88,41 @@ p {
   height: auto;
 }
 
-.es-grid-item_v2 {
-  outline: 2px solid yellow;
+.es-flex-container-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid blue;
 }
 
-.es-flex-container {
+.es-flex-container-row {
   display: flex;
-  flex-direction: row;
-  outline: 1px solid blue;
-  background-color: blue;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: space-around;
+  align-content: flex-end;
+  outline: 1px solid purple;
 }
-.es-flex-container img {
-  display: inline-block;
+.es-flex-container-row figcaption img {
+  max-height: 1.5rem;
+}
+.es-flex-container-row .es-flex-item {
+  flex: 1;
+  flex-basis: 21%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 1px solid red;
+}
+.es-flex-container-row .double {
+  flex: 2;
+  flex-basis: 42%;
 }
 
 .es-main {
-  width: 100vw;
   max-width: 1544px;
+  margin: auto;
 }
 
 .es-figcaption-red {
