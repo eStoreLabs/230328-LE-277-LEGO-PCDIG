@@ -39,8 +39,6 @@ h3 {
   font-family: cera_probold, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
 
-
-
 p {
   font-family: cera_proregular, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
@@ -116,15 +114,14 @@ $es-black-200: #c7c1c0;
   grid-column: 1 / 3;
 }
 
-
 @media screen and (min-width: 600px) {
   .es-grid-container {
     grid-template-columns: repeat(4, 1fr);
     align-items: end;
   }
   .es-grid-last {
-  grid-column: 3 / 5;
-}
+    grid-column: 3 / 5;
+  }
 }
 
 .es-grid-item {
@@ -151,7 +148,7 @@ $es-black-200: #c7c1c0;
   //align-content: end;
   //align-items: center;
   //justify-items: center;
-  
+
   outline: 1px solid green;
   // &-head {
   //   display: grid;
@@ -191,8 +188,8 @@ $es-black-200: #c7c1c0;
 }
 
 figcaption {
-    height: 3rem;
-  }
+  height: 3rem;
+}
 
 .es-flex-container-col {
   display: flex;
@@ -205,18 +202,18 @@ figcaption {
 }
 
 .es-flex-container-row {
-display: flex;
-flex-direction: row;
-width: 100%;
-align-items: center;
-justify-content: space-around;
-padding: 0.5rem;
-img {
-  max-height: 2rem;
-  max-width: 50px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+  img {
+    max-height: 2rem;
+    max-width: 50px;
+  }
 }
-}
-  
+
 // main styles
 
 .es-main {
@@ -286,7 +283,11 @@ img {
   }
   figure:nth-of-type(4) {
     figcaption {
-      background: linear-gradient(90deg, $es-yellow-400 50%, $es-yellow-200 50%);
+      background: linear-gradient(
+        90deg,
+        $es-yellow-400 50%,
+        $es-yellow-200 50%
+      );
     }
   }
   figure:nth-of-type(5) {
@@ -301,23 +302,91 @@ img {
   }
 }
 
+// #es-categories-theme {
+//   .es-flex-container-row {
+//     padding: 0;
+//     height: 100%;
+//     img {
+//       max-height: unset;
+//       width: 100%;
+//       outline: 1px solid red;
+//     }
+//   }
+//   .square {
+//     width: 100%;
+//     aspect-ratio : 1 / 1;
+//     background-color: #006cb7;
+//   }
+
+// }
+
 #es-categories-theme {
-  .es-flex-container-row {
-    padding: 0;
-    height: 100%;
-    img {
-      max-height: unset;
-      width: 100%;
-      outline: 1px solid red;
+  .es-grid-container-card:nth-of-type(1) {
+    .es-grid-container-card-head-L {
+      background-color: #006fba;
+    }
+    .es-grid-container-card-head-R {
+      background-color: #f5bbd7;
     }
   }
-  .square {
-    width: 100%;
-    aspect-ratio : 1 / 1;
-    background-color: #006cb7;
+  .es-grid-container-card:nth-of-type(2) {
+    .es-grid-container-card-head-L {
+      background-color: #d25d8b;
+    }
+    .es-grid-container-card-head-R {
+      background-color: #4a2282;
+    }
   }
-  
+  .es-grid-container-card:nth-of-type(3) {
+    .es-grid-container-card-head-L {
+      background-color: #000000;
+    }
+    .es-grid-container-card-head-R {
+      background-color: #d60008;
+    }
+  }
+  .es-grid-container-card:nth-of-type(4) {
+    .es-grid-container-card-head-L {
+      background-color: #ffffff;
+    }
+    .es-grid-container-card-head-R {
+      background-color: #fff374;
+    }
+  }
+  .es-grid-container-card:nth-of-type(5) {
+    .es-grid-container-card-head-L {
+      background-color: #0c0e0c;
+    }
+    .es-grid-container-card-head-R {
+      background-color: #f1f0f1;
+    }
+  }
+  .es-grid-container-card:nth-of-type(6) {
+    .es-grid-container-card-head-L {
+      background-color: #ffffff;
+    }
+    .es-grid-container-card-head-R {
+      background-color: #01040b;
+    }
+  }
+  .es-grid-container-card:nth-of-type(7) {
+    .es-grid-container-card-head-L {
+      background-color: #ffd200;
+    }
+    .es-grid-container-card-head-R {
+      background-color: #ffd200;
+    }
+  }
+  .es-grid-container-card:nth-of-type(8) {
+    .es-grid-container-card-head-L {
+      background-color: #19325a;
+    }
+    .es-grid-container-card-head-R {
+      background-color: #fec011;
+    }
+  }
 }
+
 
 // decorative lines
 .es-divider {
@@ -333,17 +402,17 @@ img {
   }
 }
 
-  .div-01 {
-    background-image: url(../img/divider-01-long.png);
-  }
+.div-01 {
+  background-image: url(../img/divider-01-long.png);
+}
 
-  .div-02 {
-    background-image: url(../img/divider-02-long.png);
-  }
-  .div-03 {
-    background-image: url(../img/divider-03-long.png);
-  }
+.div-02 {
+  background-image: url(../img/divider-02-long.png);
+}
+.div-03 {
+  background-image: url(../img/divider-03-long.png);
+}
 
-  figure {
-    outline: 2px solid red;
-  }
+figure {
+  outline: 2px solid red;
+}
