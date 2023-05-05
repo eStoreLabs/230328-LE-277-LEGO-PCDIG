@@ -365,11 +365,19 @@ figcaption {
     }
   }
   .es-grid-container-card:nth-of-type(7) {
-    .es-grid-container-card-head-L {
+    .es-grid-container-card-head {
       background-color: #ffd200;
-    }
-    .es-grid-container-card-head-R {
-      background-color: #ffd200;
+      grid-column: 1 / 3;
+      grid-row: 1/2;
+      display: grid;
+      place-items: center;
+      width: 100%;
+      height: 100%;
+      img {
+        //max-width: 90%;
+        //max-height: 50%;
+        outline: 2px solid blue;
+      }
     }
   }
   .es-grid-container-card:nth-of-type(8) {

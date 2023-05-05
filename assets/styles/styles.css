@@ -284,11 +284,17 @@ figcaption {
 #es-categories-theme .es-grid-container-card:nth-of-type(6) .es-grid-container-card-head-R {
   background-color: #01040b;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-L {
+#es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head {
   background-color: #ffd200;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-R {
-  background-color: #ffd200;
+#es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head img {
+  outline: 2px solid blue;
 }
 #es-categories-theme .es-grid-container-card:nth-of-type(8) .es-grid-container-card-head-L {
   background-color: #19325a;
