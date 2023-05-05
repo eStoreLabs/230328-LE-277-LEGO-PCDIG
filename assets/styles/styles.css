@@ -135,7 +135,7 @@ p {
 }
 .es-grid-container-card-head-R img {
   min-height: 40%;
-  max-height: 60px;
+  max-height: 50px;
   -o-object-fit: contain;
      object-fit: contain;
 }
