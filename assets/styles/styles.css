@@ -31,7 +31,7 @@ h3 {
   font-family: cera_probold, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
 
-p {
+li, p {
   font-family: cera_proregular, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
 
@@ -48,7 +48,7 @@ p {
   font-size: clamp(1rem, 0.8039rem + 0.9804vw, 1.75rem);
   background-color: white;
   padding: 0.5rem;
-  border: 2px solid black;
+  border: 3px solid black;
   position: absolute;
 }
 .es-centered h2 {
@@ -91,9 +91,9 @@ p {
   align-content: start;
   display: grid;
   width: 100%;
-  grid-template-rows: 1fr 60px;
+  height: 100%;
+  grid-template-rows: 1fr 3rem;
   align-content: start;
-  justify-content: center;
   align-items: end;
 }
 .es-grid-item img {
@@ -181,7 +181,6 @@ p {
   grid-column: 1/4;
   grid-row: 1/2;
   place-self: center;
-  outline: 1px solid red;
   font-size: clamp(0.875rem, 0.6789rem + 0.9804vw, 1.625rem);
 }
 
@@ -218,8 +217,6 @@ p {
 
 .es-figcaption-red {
   padding: 0.7rem;
-  display: grid;
-  place-items: center;
   text-align: center;
   font-family: cera_probold;
   letter-spacing: 0.13rem;
@@ -382,4 +379,58 @@ p {
 
 .div-03 {
   background-image: url(../img/divider-03-long.png);
+}
+
+#es-footer {
+  background-image: url(../img/footer-shapes\ -\ mobile.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-block: 2.5rem;
+}
+#es-footer .es-centered {
+  display: grid;
+  place-items: center;
+  max-width: 80%;
+  margin: auto;
+  padding: 1rem;
+  background-color: white;
+  border: 3px solid black;
+}
+#es-footer .es-centered h3 {
+  text-align: center;
+  font-size: clamp(1.625rem, 1.2655rem + 1.7974vw, 3rem);
+  width: 14ch;
+  margin-bottom: 1rem;
+}
+#es-footer .es-centered ul {
+  font-size: 16px;
+  text-align: center;
+}
+#es-footer .es-centered ul li:nth-last-of-type(2) {
+  margin-top: 1rem;
+}
+#es-footer .es-centered ul li {
+  margin-block: 2px;
+}
+
+@media screen and (min-width: 600px) {
+  #es-footer {
+    background-image: url(../img/footer-shapes.png);
+    background-size: contain;
+  }
+  #es-footer .es-centered {
+    max-width: 90%;
+  }
+  #es-footer .es-centered h3 {
+    width: unset;
+  }
+  #es-footer ul {
+    -moz-columns: 4 auto;
+         columns: 4 auto;
+    gap: 2.5rem;
+  }
+  #es-footer ul li {
+    text-align: left;
+  }
 }/*# sourceMappingURL=styles.css.map */
