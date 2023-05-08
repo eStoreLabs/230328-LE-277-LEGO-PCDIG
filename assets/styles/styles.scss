@@ -33,6 +33,12 @@ figure, figcaption {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  margin: 0;
+  color: inherit;
+}
+
 //typography
 //LEGO fonts upload
 @font-face {
@@ -437,15 +443,16 @@ $es-black-200: #c7c1c0;
     }
   }
   .es-grid-container-card:nth-of-type(7) {
-    position: relative;
+    
     .es-grid-container-card-head-L,
     .es-grid-container-card-head-R {
       background-color: #ffd200;
+      position: relative;
       img {
         position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        max-width: 36%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
       }
     }
   }
@@ -532,7 +539,6 @@ $es-black-200: #c7c1c0;
     h3 {
      text-align: center; 
      font-size: clamp(1.625rem, 1.2655rem + 1.7974vw, 3rem);
-     width: 14ch;
      margin-bottom: 1rem;
     }
     ul {
@@ -555,9 +561,7 @@ $es-black-200: #c7c1c0;
     background-size: contain;
     .es-centered {
       max-width: 90%;
-      h3 {
-      width: unset;
-    }
+    
     }
     
     ul {

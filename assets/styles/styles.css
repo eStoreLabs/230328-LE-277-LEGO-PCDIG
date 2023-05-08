@@ -24,6 +24,11 @@
   box-sizing: border-box;
   margin: 0;
 }
+#es-LEGO a {
+  text-decoration: none;
+  margin: 0;
+  color: inherit;
+}
 @font-face {
   font-family: "cera_problack";
   src: url("../fonts/cera_pro_black-webfont.woff2") format("woff2"), url("../fonts/cera_pro_black-webfont.woff") format("woff");
@@ -322,19 +327,17 @@
 #es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(6) .es-grid-container-card-head-R {
   background-color: #01040b;
 }
-#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(7) {
-  position: relative;
-}
 #es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-L,
 #es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-R {
   background-color: #ffd200;
+  position: relative;
 }
 #es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-L img,
 #es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-R img {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  max-width: 36%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
 }
 #es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(8) .es-grid-container-card-head-L {
   background-color: #19325a;
@@ -407,7 +410,6 @@
 #es-LEGO #es-footer .es_centered h3 {
   text-align: center;
   font-size: clamp(1.625rem, 1.2655rem + 1.7974vw, 3rem);
-  width: 14ch;
   margin-bottom: 1rem;
 }
 #es-LEGO #es-footer .es_centered ul {
@@ -427,9 +429,6 @@
   }
   #es-LEGO #es-footer .es-centered {
     max-width: 90%;
-  }
-  #es-LEGO #es-footer .es-centered h3 {
-    width: unset;
   }
   #es-LEGO #es-footer ul {
     -moz-columns: 4 auto;
