@@ -1,3 +1,29 @@
+#es-LEGO html {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+#es-LEGO *, #es-LEGO *:before, #es-LEGO *:after {
+  box-sizing: inherit;
+}
+#es-LEGO body, #es-LEGO h1, #es-LEGO h2, #es-LEGO h3, #es-LEGO h4, #es-LEGO h5, #es-LEGO h6, #es-LEGO p, #es-LEGO ol, #es-LEGO ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+#es-LEGO ol, #es-LEGO ul {
+  list-style: none;
+}
+#es-LEGO img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+#es-LEGO figure, #es-LEGO figcaption {
+  box-sizing: border-box;
+  margin: 0;
+}
 @font-face {
   font-family: "cera_problack";
   src: url("../fonts/cera_pro_black-webfont.woff2") format("woff2"), url("../fonts/cera_pro_black-webfont.woff") format("woff");
@@ -16,34 +42,29 @@
   font-weight: normal;
   font-style: normal;
 }
-h1,
-h2,
-h3 {
+#es-LEGO h1,
+#es-LEGO h2,
+#es-LEGO h3 {
   text-transform: uppercase;
 }
-
-h1 {
+#es-LEGO h1 {
   font-family: cera_problack, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
-
-h2,
-h3 {
+#es-LEGO h2,
+#es-LEGO h3 {
   font-family: cera_probold, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
-
-li, p {
+#es-LEGO li, #es-LEGO p {
   font-family: cera_proregular, "Trebutchet MS", Arial, Helvetica, sans-serif;
 }
-
-.margin {
+#es-LEGO .margin {
   margin: 16px;
 }
-
-.es-centered {
+#es-LEGO .es-centered {
   display: grid;
   place-items: center;
 }
-.es-centered h1 {
+#es-LEGO .es-centered h1 {
   text-align: center;
   font-size: clamp(1rem, 0.8039rem + 0.9804vw, 1.75rem);
   background-color: white;
@@ -51,20 +72,19 @@ li, p {
   border: 3px solid black;
   position: absolute;
 }
-.es-centered h2 {
+#es-LEGO .es-centered h2 {
   text-align: center;
   font-size: clamp(0.75rem, 0.462rem + 1.1438vw, 1.5rem);
   position: absolute;
   width: 10ch;
 }
-
 @media screen and (min-width: 600px) {
-  .es-centered h1 {
+  #es-LEGO .es-centered h1 {
     background-color: unset;
     border: unset;
   }
 }
-.es-grid-container {
+#es-LEGO .es-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
@@ -73,21 +93,19 @@ li, p {
   justify-content: space-between;
   gap: 16px;
 }
-
-.es-grid-first {
+#es-LEGO .es-grid-first {
   grid-column: 1/3;
 }
-
 @media screen and (min-width: 600px) {
-  .es-grid-container {
+  #es-LEGO .es-grid-container {
     grid-template-columns: repeat(4, 1fr);
     align-items: end;
   }
-  .es-grid-last {
+  #es-LEGO .es-grid-last {
     grid-column: 3/5;
   }
 }
-.es-grid-item {
+#es-LEGO .es-grid-item {
   align-content: start;
   display: grid;
   width: 100%;
@@ -96,19 +114,18 @@ li, p {
   align-content: start;
   align-items: end;
 }
-.es-grid-item img {
+#es-LEGO .es-grid-item img {
   padding: 1rem;
   width: 100%;
   height: auto;
 }
-
-.es-grid-container-card {
+#es-LEGO .es-grid-container-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 2fr;
   justify-items: center;
 }
-.es-grid-container-card-head-L {
+#es-LEGO .es-grid-container-card-head-L {
   grid-row: 1/2;
   grid-column: 1/2;
   display: grid;
@@ -117,13 +134,13 @@ li, p {
   height: 100%;
   padding-inline: 5px;
 }
-.es-grid-container-card-head-L img {
+#es-LEGO .es-grid-container-card-head-L img {
   height: max(60px, 70%);
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.es-grid-container-card-head-R {
+#es-LEGO .es-grid-container-card-head-R {
   grid-row: 1/2;
   grid-column: 2/3;
   width: 100%;
@@ -131,33 +148,32 @@ li, p {
   display: grid;
   place-items: center;
 }
-.es-grid-container-card-head-R img {
+#es-LEGO .es-grid-container-card-head-R img {
   min-height: 40%;
   max-height: 50px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.es-grid-container-card-body {
+#es-LEGO .es-grid-container-card-body {
   grid-row: 2/3;
   grid-column: 1/3;
 }
-.es-grid-container-card-footer {
+#es-LEGO .es-grid-container-card-footer {
   grid-row: 2/3;
   grid-column: 1/2;
   align-self: end;
   justify-self: start;
   margin-left: 1rem;
 }
-
 @media screen and (min-width: 600px) {
-  .es-grid-container-card {
+  #es-LEGO .es-grid-container-card {
     border-radius: unset;
   }
-  .es-grid-container-card-head-R img {
+  #es-LEGO .es-grid-container-card-head-R img {
     max-height: 100px;
   }
 }
-.es-grid-container-card-3x3 {
+#es-LEGO .es-grid-container-card-3x3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -167,24 +183,23 @@ li, p {
   position: relative;
   overflow: hidden;
 }
-.es-grid-container-card-3x3:hover img {
+#es-LEGO .es-grid-container-card-3x3:hover img {
   transform: scale(1.05);
 }
-.es-grid-container-card-3x3 img {
+#es-LEGO .es-grid-container-card-3x3 img {
   position: absolute;
   bottom: 0;
   height: 78%;
   scale: 100%;
   transition: all 200ms ease-in;
 }
-.es-grid-container-card-3x3 figcaption {
+#es-LEGO .es-grid-container-card-3x3 figcaption {
   grid-column: 1/4;
   grid-row: 1/2;
   place-self: center;
   font-size: clamp(0.875rem, 0.6789rem + 0.9804vw, 1.625rem);
 }
-
-.es-flex-container-col {
+#es-LEGO .es-flex-container-col {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -192,8 +207,7 @@ li, p {
   align-content: end;
   justify-content: space-evenly;
 }
-
-.es-flex-container-row {
+#es-LEGO .es-flex-container-row {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -201,21 +215,18 @@ li, p {
   justify-content: space-around;
   padding: 0.5rem;
 }
-.es-flex-container-row img {
+#es-LEGO .es-flex-container-row img {
   max-height: 2rem;
   max-width: 50px;
 }
-
-.es-main {
+#es-LEGO .es-main {
   max-width: 1544px;
   margin: auto;
 }
-
-.es-centered img {
+#es-LEGO .es-centered img {
   width: 100%;
 }
-
-.es-figcaption-red {
+#es-LEGO .es-figcaption-red {
   padding: 0.7rem;
   text-align: center;
   font-family: cera_probold;
@@ -226,17 +237,16 @@ li, p {
   color: white;
   font-size: clamp(0.75rem, 0.5539rem + 0.9804vw, 1.5rem);
 }
-
-.es-grid-container .es-grid-item:nth-child(1) {
+#es-LEGO .es-grid-container .es-grid-item:nth-child(1) {
   background: linear-gradient(90deg, #00a449 50%, #008846 50%);
 }
-.es-grid-container .es-grid-item:nth-child(2) {
+#es-LEGO .es-grid-container .es-grid-item:nth-child(2) {
   background: linear-gradient(90deg, #fff472 50%, #ffd100 50%);
 }
-.es-grid-container .es-grid-item:nth-child(3) {
+#es-LEGO .es-grid-container .es-grid-item:nth-child(3) {
   background: linear-gradient(90deg, #ff9550 50%, #ff7e06 50%);
 }
-.es-grid-container .es-grid-item:nth-child(4) {
+#es-LEGO .es-grid-container .es-grid-item:nth-child(4) {
   align-self: center;
   background-image: url(../img/04-compre.png);
   background-position: center;
@@ -247,148 +257,140 @@ li, p {
   height: 100%;
   width: 100%;
 }
-
-#es-categories-age h3 {
+#es-LEGO #es-categories-age h3 {
   color: white;
 }
-#es-categories-age figcaption {
+#es-LEGO #es-categories-age figcaption {
   height: 3rem;
 }
-#es-categories-age figure:nth-of-type(1) figcaption {
+#es-LEGO #es-categories-age figure:nth-of-type(1) figcaption {
   background: linear-gradient(90deg, #006cb7 50%, #96ceea 50%);
 }
-#es-categories-age figure:nth-of-type(2) figcaption {
+#es-LEGO #es-categories-age figure:nth-of-type(2) figcaption {
   background: linear-gradient(90deg, #9d1c20 50%, #dd1a22 50%);
 }
-#es-categories-age figure:nth-of-type(3) figcaption {
+#es-LEGO #es-categories-age figure:nth-of-type(3) figcaption {
   background: linear-gradient(90deg, #00682c 50%, #00b143 50%);
 }
-#es-categories-age figure:nth-of-type(4) figcaption {
+#es-LEGO #es-categories-age figure:nth-of-type(4) figcaption {
   background: linear-gradient(90deg, #ffad00 50%, #ffd500 50%);
 }
-#es-categories-age figure:nth-of-type(5) figcaption {
+#es-LEGO #es-categories-age figure:nth-of-type(5) figcaption {
   background: linear-gradient(90deg, #ff59a1 50%, #ffafd0 50%);
 }
-#es-categories-age figure:nth-of-type(6) figcaption {
+#es-LEGO #es-categories-age figure:nth-of-type(6) figcaption {
   background: linear-gradient(90deg, #000000 50%, #c7c1c0 50%);
 }
-
-#es-categories-theme .es-grid-container-card:nth-of-type(1) .es-grid-container-card-head-L {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(1) .es-grid-container-card-head-L {
   background-color: #006fba;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(1) .es-grid-container-card-head-R {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(1) .es-grid-container-card-head-R {
   background-color: #f5bbd7;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(2) .es-grid-container-card-head-L {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(2) .es-grid-container-card-head-L {
   background-color: #d25d8b;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(2) .es-grid-container-card-head-R {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(2) .es-grid-container-card-head-R {
   background-color: #4a2282;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(3) .es-grid-container-card-head-L {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(3) .es-grid-container-card-head-L {
   background-color: #000000;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(3) .es-grid-container-card-head-R {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(3) .es-grid-container-card-head-R {
   background-color: #d60008;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(4) .es-grid-container-card-head-L {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(4) .es-grid-container-card-head-L {
   background-color: #ffffff;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(4) .es-grid-container-card-head-R {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(4) .es-grid-container-card-head-R {
   background-color: #fff374;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(5) .es-grid-container-card-head-L {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(5) .es-grid-container-card-head-L {
   background-color: #0c0e0c;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(5) .es-grid-container-card-head-R {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(5) .es-grid-container-card-head-R {
   background-color: #f1f0f1;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(6) .es-grid-container-card-head-L {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(6) .es-grid-container-card-head-L {
   background-color: #ffffff;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(6) .es-grid-container-card-head-R {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(6) .es-grid-container-card-head-R {
   background-color: #01040b;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(7) {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(7) {
   position: relative;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-L,
-#es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-R {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-L,
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-R {
   background-color: #ffd200;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-L img,
-#es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-R img {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-L img,
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(7) .es-grid-container-card-head-R img {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0%);
   max-width: 36%;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(8) .es-grid-container-card-head-L {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(8) .es-grid-container-card-head-L {
   background-color: #19325a;
 }
-#es-categories-theme .es-grid-container-card:nth-of-type(8) .es-grid-container-card-head-R {
+#es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(8) .es-grid-container-card-head-R {
   background-color: #fec011;
 }
-
-#es-categories-other h3 {
+#es-LEGO #es-categories-other h3 {
   color: white;
   text-transform: none;
 }
-#es-categories-other .es-grid-container-card-3x3:nth-of-type(1) {
+#es-LEGO #es-categories-other .es-grid-container-card-3x3:nth-of-type(1) {
   background-image: url(../img/animals-bg.png);
   background-size: cover;
 }
-#es-categories-other .es-grid-container-card-3x3:nth-of-type(1) img {
+#es-LEGO #es-categories-other .es-grid-container-card-3x3:nth-of-type(1) img {
   right: 0;
 }
-#es-categories-other .es-grid-container-card-3x3:nth-of-type(2) {
+#es-LEGO #es-categories-other .es-grid-container-card-3x3:nth-of-type(2) {
   background-image: url(../img/vehicles-bg.png);
   background-size: cover;
 }
-#es-categories-other .es-grid-container-card-3x3:nth-of-type(2) img {
+#es-LEGO #es-categories-other .es-grid-container-card-3x3:nth-of-type(2) img {
   right: 0;
 }
-#es-categories-other .es-grid-container-card-3x3:nth-of-type(3) {
+#es-LEGO #es-categories-other .es-grid-container-card-3x3:nth-of-type(3) {
   background-image: url(../img/gaming-bg.png);
   background-size: cover;
 }
-#es-categories-other .es-grid-container-card-3x3:nth-of-type(4) {
+#es-LEGO #es-categories-other .es-grid-container-card-3x3:nth-of-type(4) {
   background-image: url(../img/heroes-bg.png);
   background-size: cover;
 }
-
-.es-divider {
+#es-LEGO .es-divider {
   height: 40px;
   margin-block: 40px;
   background-position: right;
   background-size: cover;
 }
-
 @media screen and (min-width: 600px) {
-  .es-divider {
+  #es-LEGO .es-divider {
     background-size: contain;
   }
 }
-.div-01 {
+#es-LEGO .div-01 {
   background-image: url(../img/divider-01-long.png);
 }
-
-.div-02 {
+#es-LEGO .div-02 {
   background-image: url(../img/divider-02-long.png);
 }
-
-.div-03 {
+#es-LEGO .div-03 {
   background-image: url(../img/divider-03-long.png);
 }
-
-#es-footer {
+#es-LEGO #es-footer {
   background-image: url(../img/footer-shapes\ -\ mobile.png);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   padding-block: 2.5rem;
 }
-#es-footer .es-centered {
+#es-LEGO #es-footer .es-centered {
   display: grid;
   place-items: center;
   max-width: 80%;
@@ -397,40 +399,39 @@ li, p {
   background-color: white;
   border: 3px solid black;
 }
-#es-footer .es-centered h3 {
+#es-LEGO #es-footer .es-centered h3 {
   text-align: center;
   font-size: clamp(1.625rem, 1.2655rem + 1.7974vw, 3rem);
   width: 14ch;
   margin-bottom: 1rem;
 }
-#es-footer .es-centered ul {
+#es-LEGO #es-footer .es-centered ul {
   font-size: 16px;
   text-align: center;
 }
-#es-footer .es-centered ul li:nth-last-of-type(2) {
+#es-LEGO #es-footer .es-centered ul li:nth-last-of-type(2) {
   margin-top: 1rem;
 }
-#es-footer .es-centered ul li {
+#es-LEGO #es-footer .es-centered ul li {
   margin-block: 2px;
 }
-
 @media screen and (min-width: 600px) {
-  #es-footer {
+  #es-LEGO #es-footer {
     background-image: url(../img/footer-shapes.png);
     background-size: contain;
   }
-  #es-footer .es-centered {
+  #es-LEGO #es-footer .es-centered {
     max-width: 90%;
   }
-  #es-footer .es-centered h3 {
+  #es-LEGO #es-footer .es-centered h3 {
     width: unset;
   }
-  #es-footer ul {
+  #es-LEGO #es-footer ul {
     -moz-columns: 4 auto;
          columns: 4 auto;
     gap: 2.5rem;
   }
-  #es-footer ul li {
+  #es-LEGO #es-footer ul li {
     text-align: left;
   }
 }/*# sourceMappingURL=styles.css.map */
