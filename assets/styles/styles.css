@@ -1,3 +1,7 @@
+#es-LEGO {
+  max-width: 1544px;
+  margin: auto;
+}
 #es-LEGO html {
   box-sizing: border-box;
   font-size: 100%;
@@ -223,10 +227,6 @@
 #es-LEGO .es-flex-container-row img {
   max-height: 2rem;
   max-width: 50px;
-}
-#es-LEGO .es-main {
-  max-width: 1544px;
-  margin: auto;
 }
 #es-LEGO .es_centered img {
   width: 100%;

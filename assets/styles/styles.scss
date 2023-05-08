@@ -1,5 +1,8 @@
 #es-LEGO {
 
+// width: 100%;
+max-width: 1544px;
+margin: auto;
 // css reset
 html {
   box-sizing: border-box;
@@ -297,11 +300,7 @@ $es-black-200: #c7c1c0;
 
 // main styles
 
-.es-main {
-  // width: 100%;
-  max-width: 1544px;
-  margin: auto;
-}
+
 
 .es_centered {
   img {
