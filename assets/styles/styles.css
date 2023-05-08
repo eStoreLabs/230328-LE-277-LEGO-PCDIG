@@ -60,11 +60,11 @@
 #es-LEGO .es_margin {
   margin: 16px;
 }
-#es-LEGO .es-centered {
+#es-LEGO .es_centered {
   display: grid;
   place-items: center;
 }
-#es-LEGO .es-centered h1 {
+#es-LEGO .es_centered h1 {
   text-align: center;
   font-size: clamp(1rem, 0.8039rem + 0.9804vw, 1.75rem);
   background-color: white;
@@ -72,7 +72,7 @@
   border: 3px solid black;
   position: absolute;
 }
-#es-LEGO .es-centered h2 {
+#es-LEGO .es_centered h2 {
   text-align: center;
   font-size: clamp(0.75rem, 0.462rem + 1.1438vw, 1.5rem);
   position: absolute;
