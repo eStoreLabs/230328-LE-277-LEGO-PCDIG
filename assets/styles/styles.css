@@ -208,21 +208,12 @@
   place-self: center;
   font-size: clamp(0.875rem, 0.6789rem + 0.9804vw, 1.625rem);
 }
-#es-LEGO .es-flex-container-col {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  align-content: end;
-  justify-content: space-evenly;
-}
 #es-LEGO .es-flex-container-row {
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  padding: 0.5rem;
 }
 #es-LEGO .es-flex-container-row img {
   max-height: 2rem;
@@ -266,6 +257,13 @@
   color: white;
   letter-spacing: 2px;
   font-size: clamp(1.375rem, 1.2846rem + 0.4823vw, 1.75rem);
+}
+#es-LEGO #es-categories-age figure {
+  width: 100%;
+}
+#es-LEGO #es-categories-age figure img {
+  display: block;
+  margin: auto;
 }
 #es-LEGO #es-categories-age figcaption {
   height: 3rem;
