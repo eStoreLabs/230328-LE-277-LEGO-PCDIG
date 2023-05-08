@@ -127,7 +127,7 @@ $es-black-200: #c7c1c0;
 }
 
 @media screen and (min-width: 600px) {
-  .es-centered {
+  .es_centered {
     h1 {
       background-color: unset;
       border: unset;
@@ -297,7 +297,7 @@ $es-black-200: #c7c1c0;
   margin: auto;
 }
 
-.es-centered {
+.es_centered {
   img {
     width: 100%;
   }
@@ -515,7 +515,7 @@ $es-black-200: #c7c1c0;
   background-position: top;
   background-repeat: no-repeat;
   padding-block: 2.5rem;
-  .es-centered {
+  .es_centered {
     display: grid;
     place-items: center;
     max-width: 80%;
