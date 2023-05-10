@@ -343,32 +343,6 @@
 #es-LEGO #es-categories-theme .es-grid-container-card:nth-of-type(8) .es-grid-container-card-head-R {
   background-color: #fec011;
 }
-#es-LEGO #es-categories-other h3 {
-  color: white;
-  text-transform: none;
-}
-#es-LEGO #es-categories-other .es-grid-container-card-3x3:nth-of-type(1) {
-  background-image: url(../img/animals-bg.png);
-  background-size: cover;
-}
-#es-LEGO #es-categories-other .es-grid-container-card-3x3:nth-of-type(1) img {
-  right: 0;
-}
-#es-LEGO #es-categories-other .es-grid-container-card-3x3:nth-of-type(2) {
-  background-image: url(../img/vehicles-bg.png);
-  background-size: cover;
-}
-#es-LEGO #es-categories-other .es-grid-container-card-3x3:nth-of-type(2) img {
-  right: 0;
-}
-#es-LEGO #es-categories-other .es-grid-container-card-3x3:nth-of-type(3) {
-  background-image: url(../img/gaming-bg.png);
-  background-size: cover;
-}
-#es-LEGO #es-categories-other .es-grid-container-card-3x3:nth-of-type(4) {
-  background-image: url(../img/heroes-bg.png);
-  background-size: cover;
-}
 #es-LEGO .es-divider {
   height: 40px;
   margin-block: 40px;
